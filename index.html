@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutina de Fuerza y Movilidad en Casa</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Configuración de fuente y estilos generales */
+        :root {
+            --primary-color: #3b82f6; /* blue-500 */
+            --secondary-color: #10b981; /* emerald-500 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .tab-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .progresion-tip {
+            border-left: 4px solid #f97316; /* orange-500 */
+            background-color: #fff7ed; /* orange-50 */
+        }
+        /* Ajuste para contenedores de imagen */
+        .image-placeholder {
+            min-height: 200px; 
+            background-color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4b5563;
+            font-weight: bold;
+            border-radius: 0.375rem;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-4 sm:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Encabezado Principal -->
+        <header class="text-center mb-8 bg-white p-6 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-extrabold text-blue-600 mb-2">
+                Tu Rutina de Fuerza y Movilidad en Casa
+            </h1>
+            <p class="text-lg text-gray-600">
+                Plan de 6 días (45 minutos por sesión).
+            </p>
+            <p class="text-sm text-gray-500 mt-1">
+                Enfoque: Fuerza, Postura, Movilidad y Quema de Grasa.
+            </p>
+        </header>
+
+        <!-- Sección de Progresión y Reglas -->
+        <div class="mb-8 p-6 bg-white shadow-xl rounded-xl border border-blue-100">
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b pb-2">
+                Guía de Progresión y Material
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+                
+                <!-- Tabla de Progresión -->
+                <div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-900">Estrategia de Carga (Regla del +2)</h3>
+                    <p class="mb-3 text-sm">Empieza en la Fase 1 (Técnica). Cuando puedas completar 12 repeticiones perfectas en la última serie, avanza a la siguiente Fase e **incrementa el peso.**</p>
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden text-sm">
+                        <thead>
+                            <tr class="bg-gray-50 border-b">
+                                <th class="py-2 px-4 text-left font-medium">Fase</th>
+                                <th class="py-2 px-4 text-left font-medium">Enfoque (Repeticiones)</th>
+                                <th class="py-2 px-4 text-left font-medium">Progresión</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="py-2 px-4 font-semibold text-green-600">Fase 1 (Inicio)</td>
+                                <td class="py-2 px-4">10 - 12 Reps</td>
+                                <td class="py-2 px-4">Prioriza la **Técnica**.</td>
+                            </tr>
+                            <tr class="border-b bg-yellow-50">
+                                <td class="py-2 px-4 font-semibold text-orange-600">Fase 2 (Intermedia)</td>
+                                <td class="py-2 px-4">8 - 10 Reps</td>
+                                <td class="py-2 px-4">Si alcanzas 10 Reps, **sube el peso** y vuelve a 8.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 font-semibold text-red-600">Fase 3 (Fuerza)</td>
+                                <td class="py-2 px-4">6 - 8 Reps</td>
+                                <td class="py-2 px-4">Aplica un peso mayor y baja lentamente (3 segundos).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Material Adicional -->
+                <div class="progresion-tip p-5 rounded-lg">
+                    <h3 class="font-bold text-xl text-orange-700 mb-2">Material Adicional Recomendado</h3>
+                    <p class="text-sm mb-3">Con tu equipo actual es suficiente, pero si quieres mejorar postura y evitar dolores:</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-xl mr-2 text-orange-600">⚙️</span>
+                            <div>
+                                <strong class="text-gray-900">Bandas de Resistencia (Minibands):</strong> Ideales para activar los glúteos y los rotadores del hombro (crucial para la postura).
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-xl mr-2 text-orange-600">🧘</span>
+                            <div>
+                                <strong class="text-gray-900">Rodillo de Espuma (Foam Roller):</strong> Herramienta fantástica para masajear la espalda, isquiotibiales y cadera, reduciendo la rigidez.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de Días -->
+        <div class="mb-8">
+            <div id="tabs" class="flex flex-wrap justify-center gap-2">
+                <button data-day="day1" class="tab-btn active w-full sm:w-auto text-center px-4 py-2 rounded-lg shadow-sm font-semibold transition-all duration-300">Día 1: Torso (Empuje)</button>
+                <button data-day="day2" class="tab-btn w-full sm:w-auto text-center px-4 py-2 bg-white border-2 border-gray-300 rounded-lg shadow-sm font-semibold transition-all duration-300 hover:bg-blue-500 hover:text-white">Día 2: Pierna (Fuerza)</button>
+                <button data-day="day3" class="tab-btn w-full sm:w-auto text-center px-4 py-2 bg-white border-2 border-gray-300 rounded-lg shadow-sm font-semibold transition-all duration-300 hover:bg-blue-500 hover:text-white">Día 3: Core y Movilidad</button>
+                <button data-day="day4" class="tab-btn w-full sm:w-auto text-center px-4 py-2 bg-white border-2 border-gray-300 rounded-lg shadow-sm font-semibold transition-all duration-300 hover:bg-blue-500 hover:text-white">Día 4: Torso (Tirón/Postura)</button>
+                <button data-day="day5" class="tab-btn w-full sm:w-auto text-center px-4 py-2 bg-white border-2 border-gray-300 rounded-lg shadow-sm font-semibold transition-all duration-300 hover:bg-blue-500 hover:text-white">Día 5: Pierna (Estabilidad)</button>
+                <button data-day="day6" class="tab-btn w-full sm:w-auto text-center px-4 py-2 bg-white border-2 border-gray-300 rounded-lg shadow-sm font-semibold transition-all duration-300 hover:bg-blue-500 hover:text-white">Día 6: Descanso Activo</button>
+                <button data-day="day7" class="tab-btn w-full sm:w-auto text-center px-4 py-2 bg-white border-2 border-gray-300 rounded-lg shadow-sm font-semibold transition-all duration-300 hover:bg-blue-500 hover:text-white">Día 7: Descanso Total</button>
+            </div>
+        </div>
+
+        <!-- Contenido de las Rutinas -->
+        <div id="routines" class="mb-8">
+            
+            <!-- DÍA 1: Torso (Empuje) -->
+            <div id="day1" class="workout-day space-y-6">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-1">Día 1: Torso - Énfasis en Empuje (Pecho y Hombro)</h3>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">1. Press de Banca con Mancuernas (Pecho)</h4>
+                        <p class="mb-2"><strong>3 series de 10-12 repeticiones. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Tumbado en el banco, baja las mancuernas controlando el movimiento. Mantén los codos en un ángulo de unos 45 grados respecto al cuerpo para proteger los hombros. Empuja hasta extender los brazos.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Estabilidad del hombro y fuerza del pecho.</p>
+                    </div>
+                    <!-- LOCAL FILE: press_banca.gif -->
+                    <img id="img-press-banca" src="press_banca.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Apress_banca.gif';" alt="Press de Banca con Mancuernas" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">2. Remo en TRX (Espalda - Tirón)</h4>
+                        <p class="mb-2"><strong>3 series de 10-12 repeticiones. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Sujeta el TRX e inclínate hacia atrás. Tira de tu cuerpo hacia el punto de anclaje, juntando los omóplatos. Cuanto más vertical estés, más fácil será. **Alternativa:** Remo con mancuerna a una mano en banco.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Fuerza de espalda y corrección de postura.</p>
+                    </div>
+                    <!-- LOCAL FILE: remo_trx.gif -->
+                    <img id="img-remo-trx" src="remo_trx.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Aremo_trx.gif';" alt="Remo en TRX" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">3. Press Militar Sentado con Mancuernas (Hombro)</h4>
+                        <p class="mb-2"><strong>3 series de 10-12 repeticiones. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Sentado en el banco (con soporte lumbar), empuja las mancuernas desde los hombros hacia arriba. Evita arquear demasiado la espalda y controla la bajada.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Fuerza de hombro.</p>
+                    </div>
+                    <!-- LOCAL FILE: press_militar.gif -->
+                    <img id="img-press-militar" src="press_militar.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Apress_militar.gif';" alt="Press Militar Sentado" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">4. Pájaros (Elevaciones Posteriores)</h4>
+                        <p class="mb-2"><strong>3 series de 12-15 repeticiones (Peso ligero). Descanso: 45s.</strong></p>
+                        <p class="text-sm">Inclinado hacia adelante (o tumbado boca abajo en el banco), eleva las mancuernas hacia los lados, juntando los omóplatos. Clave para la salud del hombro y la postura erguida.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Postura y salud del manguito rotador.</p>
+                    </div>
+                    <!-- LOCAL FILE: pajaros.gif -->
+                    <img id="img-pajaros" src="pajaros.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Apajaros.gif';" alt="Pájaros" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+            </div>
+
+            <!-- DÍA 2: Pierna (Fuerza) -->
+            <div id="day2" class="workout-day hidden space-y-6">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-1">Día 2: Tren Inferior - Énfasis en Fuerza Central</h3>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">1. Sentadilla de Copa (Goblet Squat)</h4>
+                        <p class="mb-2"><strong>3 series de 10-12 repeticiones. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Sujeta una mancuerna verticalmente contra tu pecho. Baja lento como si te fueras a sentar, manteniendo el pecho erguido. Permite un buen control de la espalda.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Técnica de sentadilla y Core.</p>
+                    </div>
+                    <!-- LOCAL FILE: sentadilla_copa.gif -->
+                    <img id="img-sentadilla-copa" src="sentadilla_copa.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Asentadilla_copa.gif';" alt="Sentadilla de Copa" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">2. Peso Muerto Rumano con Mancuernas (Isquios/Glúteos)</h4>
+                        <p class="mb-2"><strong>3 series de 10 repeticiones. Descanso: 60s.</strong></p>
+                        <p class="text-sm">De pie, desliza las mancuernas por tus muslos hacia abajo, doblando solo ligeramente las rodillas. **El movimiento viene de la cadera (llevar el trasero hacia atrás).** Clave para la espalda baja.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Fortalecimiento posterior y protección lumbar.</p>
+                    </div>
+                    <!-- LOCAL FILE: peso_muerto_rumano.gif -->
+                    <img id="img-peso-muerto-rumano" src="peso_muerto_rumano.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Apeso_muerto_rumano.gif';" alt="Peso Muerto Rumano" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">3. Zancadas Alternas (Estabilidad y Cuádriceps)</h4>
+                        <p class="mb-2"><strong>3 series de 8 repeticiones por pierna. Descanso: 45s.</strong></p>
+                        <p class="text-sm">Da un paso grande hacia adelante y baja la rodilla trasera hacia el suelo (sin tocarlo). Mantén el torso recto. Si te da inestabilidad, hazlas sin moverte, llevando solo una pierna atrás (Reverse Lunge).</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Equilibrio y fuerza unilateral.</p>
+                    </div>
+                    <!-- LOCAL FILE: zancadas_alternas.gif -->
+                    <img id="img-zancadas-alternas" src="zancadas_alternas.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Azancadas_alternas.gif';" alt="Zancadas Alternas" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">4. Puente de Glúteo (Activación Core/Glúteos)</h4>
+                        <p class="mb-2"><strong>3 series de 15-20 repeticiones. Descanso: 30s.</strong></p>
+                        <p class="text-sm">Tumbado boca arriba, rodillas dobladas, eleva la cadera apretando fuerte los glúteos arriba. Puedes poner una mancuerna sobre la pelvis. Excelente para la cadera y la espalda baja.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Estabilidad de la pelvis y fuerza del glúteo.</p>
+                    </div>
+                    <!-- LOCAL FILE: puente_gluteo.gif -->
+                    <img id="img-puente-gluteo" src="puente_gluteo.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Apuente_gluteo.gif';" alt="Puente de Glúteo" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+            </div>
+
+            <!-- DÍA 3: Core y Movilidad -->
+            <div id="day3" class="workout-day hidden space-y-6">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-1">Día 3: Core, Estabilidad y Movilidad de Postura</h3>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">1. Plancha Frontal</h4>
+                        <p class="mb-2"><strong>3 series de 30-45 segundos. Descanso: 30s.</strong></p>
+                        <p class="text-sm">Apoya antebrazos y pies. Mantén el cuerpo como una tabla recta, apretando el abdomen y los glúteos para evitar que la cadera caiga. **Clave para la postura.**</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Resistencia Core y anti-extensión lumbar.</p>
+                    </div>
+                    <!-- LOCAL FILE: plancha.gif -->
+                    <img id="img-plancha" src="plancha.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Aplancha.gif';" alt="Plancha Frontal" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">2. Bird-Dog (Pájaro-Perro)</h4>
+                        <p class="mb-2"><strong>3 series de 10 repeticiones por lado. Descanso: 30s.</strong></p>
+                        <p class="text-sm">A cuatro patas, extiende el brazo derecho y la pierna izquierda a la vez. Hazlo lento, manteniendo la espalda inmóvil (como si tuvieras un vaso de agua encima).</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Estabilidad de columna y equilibrio.</p>
+                    </div>
+                    <!-- LOCAL FILE: bird_dog.gif -->
+                    <img id="img-bird-dog" src="bird_dog.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Abird_dog.gif';" alt="Bird-Dog" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">3. Paseo del Granjero (Farmer's Walk)</h4>
+                        <p class="mb-2"><strong>3 series de 30-40 segundos. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Sujeta las mancuernas más pesadas que tengas y camina lentamente por tu espacio. Mantén el pecho erguido y evita que las mancuernas tiren de ti. **Excelente para el Core y el agarre.**</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Fuerza de agarre y Core lateral.</p>
+                    </div>
+                    <!-- LOCAL FILE: paseo_granjero.gif -->
+                    <img id="img-paseo-granjero" src="paseo_granjero.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Apaseo_granjero.gif';" alt="Paseo del Granjero" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">4. Rotación Torácica en Cuadrupedia (Movilidad)</h4>
+                        <p class="mb-2"><strong>3 series de 10 repeticiones por lado. Descanso: 30s.</strong></p>
+                        <p class="text-sm">A cuatro patas, pon una mano detrás de la cabeza y gírate hacia un lado, abriendo el pecho hacia el techo. Sigue el movimiento con tu mirada. **Mejora la postura y reduce dolores de espalda alta.**</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Movilidad de la columna torácica.</p>
+                    </div>
+                    <!-- LOCAL FILE: rotacion_toracica.gif -->
+                    <img id="img-rotacion-toracica" src="rotacion_toracica.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Arotacion_toracica.gif';" alt="Rotación Torácica" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+            </div>
+            
+            <!-- DÍA 4: Torso (Tirón/Postura) -->
+            <div id="day4" class="workout-day hidden space-y-6">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-1">Día 4: Torso - Énfasis en Tirón y Postura</h3>
+                <p class="mb-4 text-sm text-gray-600">Este día repite los movimientos de empuje del Día 1, pero se centra más en la espalda y los músculos posturales para contrarrestar la tendencia a encorvarse.</p>
+                
+                <!-- 1. Press de Banca con Mancuernas (Repite Día 1) -->
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">1. Press de Banca con Mancuernas (Repetir Día 1)</h4>
+                        <p class="mb-2"><strong>3 series de 10-12 repeticiones. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Mantén la progresión de peso del Día 1. Concéntrate en la estabilidad.</p>
+                    </div>
+                    <!-- FILE: press_banca.gif -->
+                    <img src="press_banca.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=ARCHIVO+press_banca.gif';" alt="Press de Banca con Mancuernas" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <!-- 2. Remo con Mancuerna (Tirón) -->
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">2. Remo con Mancuerna (a una mano en banco)</h4>
+                        <p class="mb-2"><strong>3 series de 10-12 repeticiones por brazo. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Apoya una rodilla y una mano en el banco. Tira de la mancuerna hacia tu costado, sintiendo cómo se contrae la espalda. Evita rotar el torso.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Fuerza unilateral y equilibrio de espalda.</p>
+                    </div>
+                    <!-- LOCAL FILE: remo_mancuerna.gif -->
+                    <img id="img-remo-mancuerna" src="remo_mancuerna.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Aremo_mancuerna.gif';" alt="Remo con Mancuerna" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <!-- 3. Elevaciones Laterales (Hombro) -->
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">3. Elevaciones Laterales con Mancuernas (Hombro)</h4>
+                        <p class="mb-2"><strong>3 series de 12-15 repeticiones (Ligeras). Descanso: 45s.</strong></p>
+                        <p class="text-sm">Con mancuernas ligeras, eleva los brazos hacia los lados hasta la altura del hombro, como si fueran a verter agua. Movimiento lento y controlado.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Ancho de hombro y resistencia.</p>
+                    </div>
+                    <!-- LOCAL FILE: elevaciones_laterales.gif -->
+                    <img id="img-elevaciones-laterales" src="elevaciones_laterales.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Aelevaciones_laterales.gif';" alt="Elevaciones Laterales" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <!-- 4. Curl de Bíceps -->
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">4. Curl de Bíceps con Mancuernas</h4>
+                        <p class="mb-2"><strong>3 series de 10-12 repeticiones. Descanso: 45s.</strong></p>
+                        <p class="text-sm">Levanta las mancuernas doblando los codos. Controla la bajada (fase negativa) para maximizar el trabajo muscular.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Desarrollo del brazo.</p>
+                    </div>
+                    <!-- LOCAL FILE: curl_biceps.gif -->
+                    <img id="img-curl-biceps" src="curl_biceps.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Acurl_biceps.gif';" alt="Curl de Bíceps" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+            </div>
+
+            <!-- DÍA 5: Pierna (Estabilidad) -->
+            <div id="day5" class="workout-day hidden space-y-6">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-1">Día 5: Tren Inferior - Énfasis en Estabilidad y Equilibrio</h3>
+                <p class="mb-4 text-sm text-gray-600">Este día se enfoca en movimientos unilaterales (una pierna a la vez) y de cadera, cruciales para mejorar el equilibrio y reducir el dolor lumbar.</p>
+
+                <!-- 1. Peso Muerto Rumano (Repite Día 2) -->
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">1. Peso Muerto Rumano con Mancuernas (Repetir Día 2)</h4>
+                        <p class="mb-2"><strong>3 series de 10 repeticiones. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Sigue el ritmo de progresión de peso. **Prioriza el estiramiento en los isquiotibiales.**</p>
+                    </div>
+                    <!-- FILE: peso_muerto_rumano.gif -->
+                    <img src="peso_muerto_rumano.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=ARCHIVO+peso_muerto_rumano.gif';" alt="Peso Muerto Rumano" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+                
+                <!-- 2. Sentadilla de Copa (Repite Día 2) -->
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">2. Sentadilla de Copa (Repetir Día 2)</h4>
+                        <p class="mb-2"><strong>3 series de 10-12 repeticiones. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Enfócate en mantener el peso de la mancuerna estable y la espalda recta.</p>
+                    </div>
+                    <!-- FILE: sentadilla_copa.gif -->
+                    <img src="sentadilla_copa.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=ARCHIVO+sentadilla_copa.gif';" alt="Sentadilla de Copa" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <!-- 3. Zancadas Búlgaras (con silla/banco) -->
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">3. Sentadilla Búlgara (con banco)</h4>
+                        <p class="mb-2"><strong>3 series de 8-10 repeticiones por pierna. Descanso: 60s.</strong></p>
+                        <p class="text-sm">Apoya el empeine del pie trasero en el banco. Baja la rodilla trasera hacia el suelo. Usa solo peso corporal al principio. Excelente para glúteos y cuádriceps.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Fuerza y estabilidad extrema.</p>
+                    </div>
+                    <!-- LOCAL FILE: sentadilla_bulgara.gif -->
+                    <img id="img-sentadilla-bulgara" src="sentadilla_bulgara.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Asentadilla_bulgara.gif';" alt="Sentadilla Búlgara" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <!-- 4. Elevaciones de Talones -->
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">4. Elevaciones de Talones con Mancuernas</h4>
+                        <p class="mb-2"><strong>3 series de 20 repeticiones. Descanso: 30s.</strong></p>
+                        <p class="text-sm">De pie, ponte de puntillas lentamente y aguanta un segundo arriba antes de bajar. Puedes hacerlo en el borde de un escalón para mayor rango.</p>
+                        <p class="mt-2 text-xs text-red-500">🔥 **Enfoque:** Fuerza de pantorrilla.</p>
+                    </div>
+                    <!-- LOCAL FILE: elevaciones_talones.gif -->
+                    <img id="img-elevaciones-talones" src="elevaciones_talones.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Aelevaciones_talones.gif';" alt="Elevaciones de Talones" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+            </div>
+
+            <!-- DÍA 6: Descanso Activo -->
+            <div id="day6" class="workout-day hidden space-y-6">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-1">Día 6: Descanso Activo, Core Ligero y Movilidad</h3>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">1. Caminata o Cardio Suave</h4>
+                        <p class="mb-2"><strong>20-30 minutos. Ritmo ligero.</strong></p>
+                        <p class="text-sm">Camina al aire libre o usa una bici estática. El objetivo es mover la sangre para ayudar a la recuperación muscular sin generar fatiga.</p>
+                    </div>
+                    <!-- LOCAL FILE: caminata.gif -->
+                    <img id="img-caminata" src="caminata.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Acaminata.gif';" alt="Caminata" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">2. Estiramiento de Cadera y Lumbar (Gato/Vaca)</h4>
+                        <p class="mb-2"><strong>10 repeticiones lentas.</strong></p>
+                        <p class="text-sm">A cuatro patas, redondea la espalda al exhalar (Gato) y arquea suavemente al inhalar (Vaca). Excelente para lubricar la columna y aliviar el dolor lumbar.</p>
+                    </div>
+                    <!-- FILE: gato_vaca.gif -->
+                    <img id="img-gato-vaca" src="gato_vaca.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Agato_vaca.gif';" alt="Gato-Vaca" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md grid md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-2">
+                        <h4 class="text-xl font-bold text-blue-600 mb-2">3. Estiramiento de Pectoral en Marco de Puerta</h4>
+                        <p class="mb-2"><strong>30 segundos por lado.</strong></p>
+                        <p class="text-sm">Apoya el antebrazo en un marco de puerta y gira el cuerpo suavemente. Ideal para contrarrestar la posición encorvada y mejorar la postura.</p>
+                    </div>
+                    <!-- FILE: estiramiento_pectoral.gif -->
+                    <img id="img-estiramiento-pectoral" src="estiramiento_pectoral.gif" onerror="this.onerror=null; this.src='https://placehold.co/400x250/e5e7eb/4b5563?text=RENOMBRA+ARCHIVO%0Aestiramiento_pectoral.gif';" alt="Estiramiento de Pectoral" class="rounded-md w-full h-full object-cover shadow-lg">
+                </div>
+            </div>
+
+            <!-- DÍA 7: Descanso Total -->
+            <div id="day7" class="workout-day hidden space-y-6">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4 border-b pb-1">Día 7: Descanso Total</h3>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <p class="text-2xl font-bold text-green-600 mb-4">¡Día de Recuperación!</p>
+                    <p class="text-lg text-gray-700">La fuerza se construye descansando. Dedica este día a dormir bien, hidratarte y nutrirte. Evita el ejercicio intenso.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Aplicaciones Recomendadas -->
+        <div class="mt-12 p-6 bg-white shadow-xl rounded-xl border border-green-100">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4 border-b pb-2">
+                📱 Aplicaciones de Fitness Recomendadas
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <!-- App de Pago -->
+                <div>
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Opción de Pago (Recomendada para ti)</h3>
+                    <p class="text-lg font-semibold text-blue-600">Centr (por Chris Hemsworth)</p>
+                    <p class="text-sm text-gray-700 mb-3">Se adapta perfectamente a tu perfil de fuerza, movilidad (yoga) y equipo en casa. La calidad de la instrucción técnica es alta.</p>
+                    <p class="text-sm text-gray-500">Precio Aprox.: **12.99 € / mes** (o 99.99 €/año).</p>
+                    <a href="#" class="inline-block mt-2 text-sm text-blue-500 hover:underline">Busca "Centr Fitness App" en tu tienda de apps.</a>
+                </div>
+
+                <!-- App Gratuita -->
+                <div>
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Opción Gratuita (Calidad y Funcionalidad)</h3>
+                    <p class="text-lg font-semibold text-green-600">Nike Training Club (NTC)</p>
+                    <p class="text-sm text-gray-700 mb-3">Todo su contenido es gratuito. Te permite filtrar por ejercicios con mancuernas y tiene rutinas de 30-45 minutos. Interfaz muy clara.</p>
+                    <p class="text-sm text-gray-500">Precio Aprox.: **Gratuita**.</p>
+                    <a href="#" class="inline-block mt-2 text-sm text-green-500 hover:underline">Busca "Nike Training Club" en tu tienda de apps.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const routines = document.querySelectorAll('.workout-day');
+            
+            // Inicializar para mostrar el Día 1 al cargar
+            let initialDay = 'day1';
+            
+            // Función para cambiar de vista
+            function showDay(dayId) {
+                routines.forEach(routine => {
+                    routine.classList.add('hidden');
+                    if (routine.id === dayId) {
+                        routine.classList.remove('hidden');
+                    }
+                });
+
+                tabs.forEach(tab => {
+                    tab.classList.remove('active');
+                    if (tab.dataset.day === dayId) {
+                        tab.classList.add('active');
+                    }
+                });
+            }
+
+            // Mostrar el día inicial
+            showDay(initialDay);
+
+            // Añadir eventos a las pestañas
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const day = this.dataset.day;
+                    showDay(day);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
